@@ -1,0 +1,35 @@
+{
+  "name": "Messenger.com",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "dev": "gulp & /Applications/nwjs.app/Contents/MacOS/nwjs .",
+    "build": "gulp build && sudo rm -rf ./build && sudo node build.js",
+    "install": "mv ./build/Messenger.com/osx64/Messenger.com.app /Applications/"
+
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ytdl-core": "^0.5.1",
+    "merge-stream": "^0.1.7",
+    "gulp-sourcemaps": "^1.5.1",
+    "gulp-concat": "^2.5.2",
+    "gulp": "^3.8.11",
+    "gulp-if": "^1.2.5",
+    "gulp-uglify": "^1.2.0",
+    "gulp-jshint": "^1.10.0",
+    "youtube-api": "^0.3.2",
+    "node-webkit-builder": "^1.0.11"
+  },
+  "window": {
+    "frame": false,
+    "toolbar": false,
+    "width": 1300,
+    "height": 800,
+    "position": "mouse",
+    "min_width": 800,
+    "min_height": 500
+  }
+}
