@@ -14,6 +14,10 @@ To build (requires sudo to build with node-webkit-builder):
 
     sudo npm run build
     
-To install (requires sudo to move into /Applications:
+To install on Mac (requires sudo to move into /Applications):
 
-    npm run install
+    npm run mac-install
+
+or to install on Linux (requires sudo to move to /bin):
+
+    npm run linux-install
