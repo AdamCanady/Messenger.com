@@ -7,7 +7,7 @@
     "dev": "gulp & /Applications/nwjs.app/Contents/MacOS/nwjs .",
     "build": "gulp build && sudo rm -rf ./build && sudo node build.js",
     "linux-install": "mv ./build/Messenger.com/linux64 /usr/bin/messenger && ln -s /usr/bin/messenger/Messenger.com /usr/bin/messenger.com",
-    "mac-install": "mv ./build/Messenger.com/osx64/Messenger.com.app /Applications/"
+    "mac-install": "sudo rm -rf /Applications/Messenger.com.app && sudo mv ./build/Messenger.com/osx64/Messenger.com.app /Applications/"
   },
   "author": "",
   "license": "ISC",
