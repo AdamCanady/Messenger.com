@@ -8,3 +8,11 @@ var gui = require('nw.gui');
 var mb = new gui.Menu({type:"menubar"});
 mb.createMacBuiltin("Messenger.com");
 gui.Window.get().menu = mb;
+
+
+var webview = document.getElementById('fb');
+
+webview.addEventListener('newwindow', function(e) {     
+  var targetUrl = e.targetUrl;
+  gui.Shell.openExternal(targetUrl);
+});
